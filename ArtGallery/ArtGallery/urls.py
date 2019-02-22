@@ -18,8 +18,10 @@ from django.urls import path
 from django.conf import settings
 
 import art.views
+import blog.views
 
 urlpatterns = [
+    path('blogs/',blog.views.blogs, name='blogs'),
     path('admin/', admin.site.urls),
     path('',art.views.home, name='home'),
 ]
