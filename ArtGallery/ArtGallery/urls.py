@@ -21,6 +21,7 @@ import art.views
 import blog.views
 
 urlpatterns = [
+    path('aboutMe', blog.views.aboutMe, name='aboutMe'),
     path('store', art.views.store, name='store'),
     path('portfolio', art.views.portfolio, name='portfolio'),
     path('blogs/',blog.views.blogs, name='blogs'),

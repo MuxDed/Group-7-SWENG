@@ -7,3 +7,6 @@ def blogs(request):
 
 def detail(request):
     return render(request,"blog/detail.html")
+
+def aboutMe(request):
+    return render(request,"blog/aboutMe.html")
