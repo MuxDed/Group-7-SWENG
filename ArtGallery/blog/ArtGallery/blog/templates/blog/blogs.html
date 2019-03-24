@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Claire Brophy's Art Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet"  href="C:\Users\liamb\Downloads\Group-7-SWENG-HomePageDev\ArtGallery\blog\templates\blog\blank.css">
+      <!-- Added the CDN above from bs wb -->
+    <!-- Custom styles for this template -->
+<!--    <link href="album.css" rel="stylesheet">-->
+
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
+      <style type="text/css"></style>
+      <script type ="text/javascript" src="C:\Users\liamb\Downloads\Group-7-SWENG-HomePageDev\ArtGallery\blog\templates\blog\paper-full.min.js"></script>
+  </head>
+
+  <body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <header>
+       <!-- <div class="container">
+    <div class="brand"><i class="glyphicon glyphicon-heart"></i> hearthealth.org</div>
+</div>
+<nav class="navbar navbar-default affix-top" data-spy="affix" data-offset-top="115" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-heart"></i> hearthealth.org</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a>
+
+                </li>
+                <li><a href="#">Link</a>
+
+                </li>
+                <li><a href="#">Link</a>
+
+                </li>
+            </ul>
+        </div>
+        /.navbar-collapse
+    </div>
+</nav>-->
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Claire Brophy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+        </li>
+         <li class="nav-item active">
+          <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'store' %}" tabindex="-2" aria-disabled="false">Store</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+</header>
+
+
+    <main role="main">
+
+      <!--<section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Claire Brophy's Art Gallery</h1>
+          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p>
+        </div>
+      </section>-->
+
+     <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+
+      <div class="col-lg-4">
+          <svg width="340" height="340">
+  <a href="detail">
+    <circle cx="170"
+            cy="170"
+            r="170"
+            fill="#e2725b" />
+
+    <text x="50%"
+          y="50%"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          alignment-baseline="middle">
+      Caption
+    </text>
+  </a>
+</svg>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+
+    </div><!-- /.row -->
+              <div class="col-lg-4">
+          <svg width="340" height="340">
+  <a href="#">
+    <circle cx="170"
+            cy="170"
+            r="170"
+            fill="#e2725b" />
+
+    <text x="50%"
+          y="50%"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          alignment-baseline="middle">
+      Caption
+    </text>
+  </a>
+</svg>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+
+    </div>
+              <div class="col-lg-4">
+          <svg width="340" height="340">
+  <a href="#">
+    <circle cx="170"
+            cy="170"
+            r="170"
+            fill="#e2725b" />
+
+    <text x="50%"
+          y="50%"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          alignment-baseline="middle">
+      Caption
+    </text>
+  </a>
+</svg>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+
+    </div>
+              <div class="col-lg-4">
+          <svg width="340" height="340">
+  <a href="#">
+    <circle cx="170"
+            cy="170"
+            r="170"
+            fill="#e2725b" />
+
+    <text x="50%"
+          y="50%"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          alignment-baseline="middle">
+      Caption
+    </text>
+  </a>
+</svg>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+
+    </div>
+              <div class="col-lg-4">
+          <svg width="340" height="340">
+  <a href="#">
+    <circle cx="170"
+            cy="170"
+            r="170"
+            fill="#e2725b" />
+
+    <text x="50%"
+          y="50%"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          alignment-baseline="middle">
+      Caption
+    </text>
+  </a>
+</svg>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+
+    </div>
+              <div class="col-lg-4">
+          <svg width="340" height="340">
+  <a href="#">
+    <circle cx="170"
+            cy="170"
+            r="170"
+            fill="#e2725b" />
+
+    <text x="50%"
+          y="50%"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          alignment-baseline="middle">
+      Caption
+    </text>
+  </a>
+</svg>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+
+    </div>
+              <div class="col-lg-4">
+          <svg width="340" height="340">
+  <a href="#">
+    <circle cx="170"
+            cy="170"
+            r="170"
+            fill="#e2725b" />
+
+    <text x="50%"
+          y="50%"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          alignment-baseline="middle">
+      Caption
+    </text>
+  </a>
+</svg>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+
+    </div>
+              <div class="col-lg-4">
+          <svg width="340" height="340">
+  <a href="#">
+    <circle cx="170"
+            cy="170"
+            r="170"
+            fill="#e2725b" />
+
+    <text x="50%"
+          y="50%"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          alignment-baseline="middle">
+      Caption
+    </text>
+  </a>
+</svg>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+
+    </div>
+              <div class="col-lg-4">
+          <svg width="340" height="340">
+  <a href="#">
+    <circle cx="170"
+            cy="170"
+            r="170"
+            fill="#e2725b" />
+
+    <text x="50%"
+          y="50%"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          alignment-baseline="middle">
+      Caption
+    </text>
+  </a>
+</svg>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+
+    </div>
+    </div>
+     </div>
+    </main>
+
+    <div class="canvas">
+    <canvas resize="true" id="ourcanvas" style="background: rgb(242, 242, 242); -webkit-user-drag: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" width="2000" height="1000" data-paper-scope="1"></canvas>
+    </div>
+    <div class="paperscript">
+    <script src="C:\Users\liamb\Downloads\Group-7-SWENG-HomePageDev\ArtGallery\blog\templates\blog\js\paper.js"  data-paper-ignore = "true" charset="utf-8"></script>
+        <script type = "text/paperscript" canvas = "ourcanvas">
+
+project.currentStyle = {
+	fillColor: 'black'
+};
+
+var ballPositions = [[100, 2800]];
+var canDraw = true;
+var handle_len_rate = 2.4;
+var circlePaths = [];
+var radius = 50;
+for (var i = 0, l = ballPositions.length; i < l; i++) {
+	var circlePath = new Path.Circle({
+		center: ballPositions[i],
+		radius: 100
+	});
+	circlePaths.push(circlePath);
+}
+
+var largeCircle = new Path.Circle({
+	center: [600, 433],
+	radius: 50
+});
+circlePaths.push(largeCircle);
+
+var backupCircle = new Path.Circle({
+	center: [4000, 433],
+	radius: 50
+});
+circlePaths.push(backupCircle);
+
+var smlCircle = new Path.Circle({
+	center: [1750, 433],
+	radius: 1
+});
+circlePaths.push(smlCircle);
+
+function onMouseMove(event) {
+
+	smlCircle.position = event.point;//+[350,0];
+
+	if(!canDraw){
+	largeCircle.position = [4000,0];
+	}
+	else if(canDraw){
+	largeCircle.position = event.point;
+	//largeCircle = backupCircle;
+	}
+	generateConnections(circlePaths);
+}
+
+var connections = new Group();
+function generateConnections(paths) {
+	// Remove the last connection paths:
+	connections.children = [];
+	canDraw = false;
+	for (var i = 0, l = paths.length; i < l; i++) {
+		for (var j = i - 1; j >= 0; j--) {
+			var path = metaball(paths[i], paths[j], 0.5, handle_len_rate, 300);
+			if (path) {
+				canDraw = true;
+				//largeCircle.radius = 100;
+				connections.appendTop(path);
+				path.removeOnMove();
+
+			}
+			else if(!path){
+				//canDraw = false;
+			}
+
+		}
+	}
+}
+
+generateConnections(circlePaths);
+
+// ---------------------------------------------
+function metaball(ball1, ball2, v, handle_len_rate, maxDistance) {
+	//canDraw = true;
+	var center1 = ball1.position;
+	var center2 = ball2.position;
+	var radius1 = ball1.bounds.width / 2;
+	var radius2 = ball2.bounds.width / 2;
+	var pi2 = Math.PI / 2;
+	var d = center1.getDistance(center2);
+	var u1, u2;
+
+	if (radius1 == 0 || radius2 == 0)
+		return;
+
+	if (d > maxDistance || d <= Math.abs(radius1 - radius2)) {
+		return;
+	} else if (d < radius1 + radius2) { // case circles are overlapping
+		u1 = Math.acos((radius1 * radius1 + d * d - radius2 * radius2) /
+				(2 * radius1 * d));
+		u2 = Math.acos((radius2 * radius2 + d * d - radius1 * radius1) /
+				(2 * radius2 * d));
+	} else {
+		u1 = 0;
+		u2 = 0;
+	}
+
+	var angle1 = (center2 - center1).getAngleInRadians();
+	var angle2 = Math.acos((radius1 - radius2) / d);
+	var angle1a = angle1 + u1 + (angle2 - u1) * v;
+	var angle1b = angle1 - u1 - (angle2 - u1) * v;
+	var angle2a = angle1 + Math.PI - u2 - (Math.PI - u2 - angle2) * v;
+	var angle2b = angle1 - Math.PI + u2 + (Math.PI - u2 - angle2) * v;
+	var p1a = center1 + getVector(angle1a, radius1);
+	var p1b = center1 + getVector(angle1b, radius1);
+	var p2a = center2 + getVector(angle2a, radius2);
+	var p2b = center2 + getVector(angle2b, radius2);
+
+	// define handle length by the distance between
+	// both ends of the curve to draw
+	var totalRadius = (radius1 + radius2);
+	var d2 = Math.min(v * handle_len_rate, (p1a - p2a).length / totalRadius);
+
+	// case circles are overlapping:
+	d2 *= Math.min(1, d * 2 / (radius1 + radius2));
+
+	radius1 *= d2;
+	radius2 *= d2;
+
+	var path = new Path({
+		segments: [p1a, p2a, p2b, p1b],
+		style: ball1.style,
+		closed: true
+	});
+	var segments = path.segments;
+	segments[0].handleOut = getVector(angle1a - pi2, radius1);
+	segments[1].handleIn = getVector(angle2a + pi2, radius2);
+	segments[2].handleOut = getVector(angle2b - pi2, radius2);
+	segments[3].handleIn = getVector(angle1b + pi2, radius1);
+	//canDraw = false;
+	return path;
+}
+
+// ------------------------------------------------
+function getVector(radians, length) {
+	//canDraw = true;
+	return new Point({
+		// Convert radians to degrees:
+		angle: radians * 180 / Math.PI,
+		length: length
+	});
+}
+
+
+
+    </script>
+
+        </div>
+        <!-- Got the js above from bs wb -->
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--<canvas id="ourcanvas" resize></canvas>-->
+
+  </body>
+</html>
