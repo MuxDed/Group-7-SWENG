@@ -21,11 +21,11 @@ import art.views
 import blog.views
 
 urlpatterns = [
-    path('aboutMe', blog.views.aboutMe, name='aboutMe'),
-    path('store', art.views.store, name='store'),
+    path('store/', art.views.store, name='store'),
     path('portfolio', art.views.portfolio, name='portfolio'),
     path('blogs/',blog.views.blogs, name='blogs'),
-    path('blogs/detail',blog.views.detail,name='detail'),
+    path('blogs/detail',blog.views.detail,name='blog\detail'),
+    path('store/detail', art.views.detail, name='art\detail'),
     path('admin/', admin.site.urls),
     path('',art.views.home, name='home'),
 ]

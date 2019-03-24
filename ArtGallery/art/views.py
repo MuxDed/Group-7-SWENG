@@ -11,3 +11,6 @@ def portfolio(request):
 
 def store(request):
     return render(request, 'art/store.html')
+
+def detail(request):
+    return render(request,"art/detail.html")
