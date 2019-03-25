@@ -8,7 +8,8 @@ import blog.views
 
 urlpatterns = [
     path('aboutMe', blog.views.aboutMe, name='aboutMe'),
-    path('store', art.views.store, name='store'),
+    path('store/', art.views.store, name='store'),
+    path('store/detail', art.views.detail, name='art/detail'),
     path('portfolio', art.views.portfolio, name='portfolio'),
     path('blogs/',blog.views.blogs, name='blogs'),
     path('blogs/detail',blog.views.detail,name='detail'),

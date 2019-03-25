@@ -14,3 +14,7 @@ def portfolio(request):
 def store(request):
     arts = Picture.objects
     return render(request, 'art/store.html', {'arts':arts})
+
+def detail(request):
+    arts = Picture.objects
+    return render(request, 'art/detail.html', {'arts':arts})
