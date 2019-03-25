@@ -31,7 +31,7 @@
 }
 
 .circular--landscape img {
-  width: auto;
+  width: 100%;
   height: 100%;
 
 }
@@ -102,9 +102,9 @@
           fill="#FFFFFF"
           text-anchor="middle"
           alignment-baseline="middle">
-      {{blog.summary}}
+        <a href="{% url 'detail' blog.id %}"><h1>{{blog.summary}}</h1></a>
     </text>
-  </a>
+
 </svg>
         <p>{{blog.description}}</p>
         <!--<<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
