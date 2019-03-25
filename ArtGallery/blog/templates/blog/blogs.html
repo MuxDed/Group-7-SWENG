@@ -35,6 +35,7 @@
   height: 100%;
 
 }
+body {padding-top: 60px;}
 </style>
   </head>
 
@@ -83,16 +84,16 @@
         </div>
       </section>-->
 
-     <div class="container marketing">
+     <div class="container">
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
 {% for blog in blogs.all %}
       <div class="col-lg-4">
-          <svg width="340" height="340">
+
 
     <div class="circular--landscape">
-	<a href="#">
+	<a href="{% url 'detail' blog.id %}">
   <img src="{{blog.image.url}}" />
   </a>
 </div>
@@ -119,8 +120,6 @@
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
       </div>
     </footer>
 
