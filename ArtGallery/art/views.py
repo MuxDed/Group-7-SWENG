@@ -8,7 +8,9 @@ def home(request):
     return render(request, 'art/home.html', {'arts':arts})
 
 def portfolio(request):
-    return render(request, 'art/portfolio.html')
+    arts = Picture.objects
+    return render(request, 'art/portfolio.html', {'arts':arts})
 
 def store(request):
-    return render(request, 'art/store.html')
+    arts = Picture.objects
+    return render(request, 'art/store.html', {'arts':arts})
