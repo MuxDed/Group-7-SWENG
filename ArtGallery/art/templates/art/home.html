@@ -67,13 +67,14 @@
       </section>
 
       <div class="album py-5 bg-light">
-        <div class="container">
 
-          <div class="row">
 
           {% for art in arts.all %}
 
           {% if art.page == 'Homepage' %}
+          <div class="container">
+
+            <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" src="{{ art.image.url }}">
@@ -84,8 +85,12 @@
                 </div>
               </div>
             </div>
+          </div>
               {% endif %}
           {% if art.page == 'Home and Sale' %}
+          <div class="container">
+
+            <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" src="{{ art.image.url }}">
@@ -96,9 +101,12 @@
                 </div>
               </div>
             </div>
+          </div>
             {% endif %}
           {% if art.page == 'Home and Portfolio' %}
+          <div class="container">
 
+            <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="{{ art.image.url }}">
@@ -109,6 +117,7 @@
                   </div>
                 </div>
               </div>
+            </div>
               {% endif %}
               {% endfor %}
             </div>
