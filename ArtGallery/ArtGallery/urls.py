@@ -16,4 +16,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',art.views.home, name='home'),
     path('<int:blog_id>/',blog.views.detail,name='detail'),
+    #path('<int:art_id>/',art.views.detail,name='detail'),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT) #implements media locals
