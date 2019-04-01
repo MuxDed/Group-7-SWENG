@@ -26,7 +26,7 @@ body {padding-top: 70px;}
     <header>
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Claire Brophy</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Clare Brophy</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,6 +43,9 @@ body {padding-top: 70px;}
         </li>
          <li class="nav-item active">
           <a class="nav-link" href="#">Store <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'aboutMe' %}" tabindex="-3" aria-disabled="false">About Me</a>
         </li>
 
       </ul>
