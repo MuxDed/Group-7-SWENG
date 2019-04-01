@@ -77,7 +77,7 @@
             <div class="row">
               {% for art in arts.all %}
 
-              {% if art.page == 'Homepage' %}
+              {% if art.homepage == 'Yes' %}
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" src="{{ art.image.url }}">
@@ -87,51 +87,11 @@
                   <small class="text-muted">{{ art.pubDate }}</small>
                 </div>
               </div>
-            </div>
-          </div>
-              {% endif %}
-
-
-          <div class="container">
-
-            <div class="row">
-                        {% if art.page == 'Home and Sale' %}
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="{{ art.image.url }}">
-              <div class="card-body">
-                <a><p class="card-text">{{ art.summary }}</p></a>
-              </div>
-                  <small class="text-muted">{{ art.pubDate }}</small>
-                </div>
-              </div>
-            </div>
-          </div>
-            {% endif %}
-
-          <div class="container">
-
-            <div class="row">
-          {% if art.page == 'Home and Portfolio' %}
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="{{ art.image.url }}">
-                <div class="card-body">
-                  <a><p class="card-text">{{ art.summary }}</p></a>
-                </div>
-                    <small class="text-muted">{{ art.pubDate }}</small>
-                  </div>
-                </div>
-              </div>
-            </div>
               {% endif %}
               {% endfor %}
             </div>
-            </div>
           </div>
-        </div>
-
-
+            </div>
     </main>
 
     <footer class="text-muted">

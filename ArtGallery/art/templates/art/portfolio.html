@@ -103,26 +103,13 @@
       <div class="row">
 
   {% for art in arts.all %}
-  {% if art.page == 'Portfolio' %}
+  {% if art.portfolio == 'Yes' %}
   <div class="column">
   <img class="card-img-top" src="{{art.image.url}}" alt="">
   </div>
   {% endif %}
  {% endfor %}
- {% for art in arts.all %}
- {% if art.page == 'Home and Portfolio' %}
- <div class="column">
- <img class="card-img-top" src="{{art.image.url}}" alt="">
- </div>
- {% endif %}
-{% endfor %}
-{% for art in arts.all %}
-{% if art.page == 'Sale and Portfolio' %}
-<div class="column">
-<img class="card-img-top" src="{{art.image.url}}" alt=""> <!--Add Store href-->
-</div>
-{% endif %}
-{% endfor %}
+
 </div>
 
 

@@ -3,24 +3,26 @@ from django.db import models
 # Create your models here.
 
 class Picture(models.Model):
-    HOMEPAGE = 'Homepage'
-    FOR_SALE="For Sale"
-    PORTFOLIO="Portfolio"
-    HOME_AND_SALE="Home and Sale"
-    HOME_AND_PORTFOLIO="Home and Portfolio"
-    SALE_AND_PORTFOLIO="Sale and Portfolio"
+    YES = "Yes"
+    NO = "No"
     PAGE_CHOICES =(
-        (HOMEPAGE,"Homepage"),
-        (FOR_SALE,"For Sale"),
-        (PORTFOLIO,"Portfolio"),
-        (HOME_AND_SALE,"Home and Sale"),
-        (HOME_AND_PORTFOLIO,"Home and Portfolio"),
-        (SALE_AND_PORTFOLIO,"Sale and Portfolio"),
+        (YES,"Yes"),
+        (NO,"No"),
     )
-    page = models.CharField(
+    homepage = models.CharField(
         max_length = 20,
         choices = PAGE_CHOICES,
-        default = PORTFOLIO,
+        default = NO,
+    )
+    forSale = models.CharField(
+        max_length = 20,
+        choices = PAGE_CHOICES,
+        default = NO,
+    )
+    portfolio = models.CharField(
+        max_length = 20,
+        choices = PAGE_CHOICES,
+        default = NO,
     )
     image = models.ImageField(upload_to = 'images/')
     title = models.CharField(max_length = 100)
